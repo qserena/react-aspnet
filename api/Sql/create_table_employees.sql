@@ -10,13 +10,13 @@ GO
 
 CREATE TABLE [dbo].[employees](
 	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[first_name] [nvarchar](50) NOT NULL,
+	[first_name] [nvarchar](50) NULL,
 	[last_name] [nvarchar](50) NULL,
 	[email] [nvarchar](50) NULL,
 	[comments] [nvarchar](MAX) NULL,
 	[is_friendly] [bit] NULL,
 	[birth_year] [int] NULL,
-	[weight] [decimal](18, 0) NULL,
+	[weight] [decimal](18, 4) NULL,
 	[employment_status] [int] NULL,
 	[favorite_color] [int] NULL
 ) ON [PRIMARY]
