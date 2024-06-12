@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using api.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;    
@@ -17,14 +18,15 @@ namespace api.Controllers
             _config = config;
         }
 
+
         [HttpGet]
         [Route("GetEmployees")]
-        public JsonResult GetEmployees()
+        public ActionResult<IEnumerable<Employee>> GetEmployees()
         {
             var connectionString = _config.GetConnectionString(connectionStringName);
             if (connectionString == null)
             {
-                return new JsonResult("Connection string not found");
+                return new NotFoundResult();
             }
             var table = new DataTable();
             using (var connection = new SqlConnection(connectionString))
@@ -37,10 +39,34 @@ namespace api.Controllers
                         table.Load(reader);
                         reader.Close();
                         connection.Close();
-                        return new JsonResult(table);
+                        return ConvertToEmployee(table);
                     }
                 }
             }
+        }
+
+        private List<Employee> ConvertToEmployee(DataTable table)
+        {
+            var emp = new List<Employee>();
+
+            emp = (from DataRow row in table.Rows
+
+                   select new Employee
+                   {
+                       Id = Convert.ToInt32(row["id"]),
+                       FirstName = row["first_name"].ToString(),
+                       LastName = row["last_name"].ToString(),
+                       Email = row["email"].ToString(), 
+                       Comments = row["comments"].ToString(),
+                       IsFriendly = Convert.ToBoolean(row["is_friendly"]),
+                       BirthYear = Convert.ToInt32(row["birth_year"]),
+                       Weight = Convert.ToDecimal(row["weight"]),
+                       EmploymentStatus = Convert.ToInt32(row["employment_status"]),
+                       FavoriteColor = Convert.ToInt32(row["favorite_color"])
+
+                   }).ToList();
+
+            return emp;
         }
 
         //[HttpPost]

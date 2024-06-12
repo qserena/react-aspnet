@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T12:20:59.58Z",
               "EditorCaption": ""
@@ -72,13 +72,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwA4AAAA4AAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAADsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T11:43:11.432Z",
               "EditorCaption": ""
@@ -130,7 +130,7 @@
               "RelativeDocumentMoniker": "Models\\Employee.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Models\\Employee.cs",
               "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T10:06:08.354Z",
               "EditorCaption": ""
