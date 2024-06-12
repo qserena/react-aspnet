@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import axios from 'axios'
 import './App.css'
 
 function App() {
@@ -22,17 +23,17 @@ function App() {
     }, [])
 
     async function getEmployees() {
-        const res = await fetch(API_URL + 'api/Employee/GetEmployees')
-        const data = await res.json()
-        const employee = data
+        const res = await axios.get(API_URL + 'api/Employee/GetEmployees')
 
         setEmployees(
-            data.map((elem) => ({
+            res.data.map((elem) => ({
                 key: elem.Id,
                 id: elem.Id,
                 firstName: elem.FirstName,
                 lastName: elem.LastName,
                 isFriendly: elem.isFriendly,
+                employment: elem.Employment,
+                favColor: elem.FavColor,
             }))
         )
 
