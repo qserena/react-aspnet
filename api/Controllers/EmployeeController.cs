@@ -26,7 +26,7 @@ namespace api.Controllers
             var connectionString = _config.GetConnectionString(connectionStringName);
             if (connectionString == null)
             {
-                return new NotFoundResult();
+                return Problem("Connection string not found");
             }
             var table = new DataTable();
             using (var connection = new SqlConnection(connectionString))
@@ -39,7 +39,7 @@ namespace api.Controllers
                         table.Load(reader);
                         reader.Close();
                         connection.Close();
-                        return ConvertToEmployee(table);
+                        return Ok(ConvertToEmployee(table));
                     }
                 }
             }
@@ -69,28 +69,39 @@ namespace api.Controllers
             return emp;
         }
 
-        //[HttpPost]
-        //[Route("AddEmployee")]
-        //public JsonResult AddEmployee([FromBody] object person)
-        //{
-        //    var connectionString = _config.GetConnectionString(connectionStringName);
-        //    if (connectionString == null)
-        //    {
-        //        return new JsonResult("Connection string not found");
-        //    }
-        //    var table = new DataTable();
-        //    using (var connection = new SqlConnection(connectionString))
-        //    {
-        //        connection.Open();
-        //        using (var command = new SqlCommand("INSERT INTO dbo.employees values(first_name=@person)", connection))
-        //        {
-        //            command.Parameters.AddWithValue("@person", person);
-        //            command.ExecuteNonQuery();
-        //            connection.Close();
-        //            return new JsonResult("Added successfully!");
-        //        }
-        //    }
-        //}
+        [HttpPost]
+        [Route("AddEmployee")]
+        public ActionResult<Employee> AddEmployee(Employee emp)
+        {
+            var connectionString = _config.GetConnectionString(connectionStringName);
+            if (connectionString == null)
+            {
+                return Problem("Connection string not found");
+            }
+            var commandText = "INSERT INTO [dbo].[employees] ([first_name],[last_name],[email],[comments],[is_friendly],[birth_year],[weight],[employment_status],[favorite_color]) " +
+                "VALUES (@first_name,@last_name,@email,@comments,@is_friendly,@birth_year,@weight,@employment_status,@favorite_color)";
+
+            var table = new DataTable();
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (var command = new SqlCommand(commandText, connection))
+                {
+                    command.Parameters.AddWithValue("@first_name", emp.FirstName);
+                    command.Parameters.AddWithValue("@last_name", emp.LastName);
+                    command.Parameters.AddWithValue("@email", emp.Email);
+                    command.Parameters.AddWithValue("@comments", emp.Comments);
+                    command.Parameters.AddWithValue("@is_friendly", emp.IsFriendly);
+                    command.Parameters.AddWithValue("@birth_year", emp.BirthYear);
+                    command.Parameters.AddWithValue("@weight", emp.Weight);
+                    command.Parameters.AddWithValue("@employment_status", emp.EmploymentStatus);
+                    command.Parameters.AddWithValue("@favorite_color", emp.FavoriteColor);
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    return Ok("Added successfully!");
+                }
+            }
+        }
     }
 }
 
