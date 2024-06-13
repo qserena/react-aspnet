@@ -97,6 +97,17 @@ function App() {
         }
     }
 
+    async function deleteClick() {
+        try {
+            const response = await axios.delete(
+                BASE_URL + `DeleteEmployee?id=${formData.id}`
+            )
+            setFormData(emptyForm)
+        } catch (error) {
+            handleAxiosError(error)
+        }
+    }
+
     function handleChange(e) {
         const { type, name, value, checked } = e.target
 
@@ -166,6 +177,9 @@ function App() {
                         </button>
                         <button id="updateButton" onClick={() => updateClick()}>
                             Update
+                        </button>
+                        <button id="deleteButton" onClick={() => deleteClick()}>
+                            Delete
                         </button>
                     </div>
                 </div>

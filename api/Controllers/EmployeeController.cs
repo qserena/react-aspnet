@@ -121,7 +121,7 @@ namespace api.Controllers
                 connection.Open();
                 using (var command = new SqlCommand(commandText, connection))
                 {
-                    command.Parameters.AddWithValue("@id", emp.Id);
+                    command.Parameters.AddWithValue("@id", id);
                     command.Parameters.AddWithValue("@first_name", emp.FirstName);
                     command.Parameters.AddWithValue("@last_name", emp.LastName);
                     command.Parameters.AddWithValue("@email", emp.Email);
@@ -134,6 +134,31 @@ namespace api.Controllers
                     command.ExecuteNonQuery();
                     connection.Close();
                     return Ok("Updated successfully!");
+                }
+            }
+        }
+
+        [HttpDelete]
+        [Route("DeleteEmployee")]
+        public ActionResult<Employee> DeleteEmployee(int id)
+        {
+            var connectionString = _config.GetConnectionString(connectionStringName);
+            if (connectionString == null)
+            {
+                return Problem("Connection string not found");
+            }
+            var commandText = "DELETE FROM [dbo].[employees] WHERE id = @id";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (var command = new SqlCommand(commandText, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    return Ok("Deleted successfully!");
                 }
             }
         }
