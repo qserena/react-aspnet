@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
+import EmployeeItem from './EmployeeItem'
 
 function App() {
     const BASE_URL = 'http://localhost:4000/api/Employee/'
@@ -122,10 +123,12 @@ function App() {
         console.log(error.config)
     }
 
-    const employeeList = employees.map((employee) => (
-        <li
-            key={employee.id}
-        >{`Id: ${employee.id} ${employee.firstName} ${employee.lastName}`}</li>
+    const employeeList = employees.map((item) => (
+        <EmployeeItem
+            key={item.id}
+            employee={item}
+            setForm={() => setFormData(item)}
+        ></EmployeeItem>
     ))
 
     return (
