@@ -2,6 +2,7 @@
 {
     public enum EmploymentStatus
     {
+        Unknown = 0,
         FullTime,
         PartTime,
         Contractor,

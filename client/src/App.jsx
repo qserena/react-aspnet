@@ -12,7 +12,7 @@ function App() {
         lastName: '',
         email: '',
         comments: '',
-        isFriendly: true,
+        isFriendly: false,
         birthYear: 0,
         weight: 0,
         employmentStatus: 0,
@@ -29,6 +29,8 @@ function App() {
     async function getEmployees() {
         try {
             const res = await axios.get(BASE_URL + 'GetEmployees')
+
+            console.log(res.data)
 
             setEmployees(
                 res.data.map((elem) => ({
@@ -217,7 +219,8 @@ function App() {
                                 onChange={handleChange}
                                 id="fullTime"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={1}
+                                checked={formData.employmentStatus === 1}
                             />
                             Full Time
                         </label>
@@ -227,7 +230,8 @@ function App() {
                                 onChange={handleChange}
                                 id="partTime"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={2}
+                                checked={formData.employmentStatus === 2}
                             />
                             Part Time
                         </label>
@@ -237,7 +241,8 @@ function App() {
                                 onChange={handleChange}
                                 id="contractor"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={3}
+                                checked={formData.employmentStatus === 3}
                             />
                             Contractor
                         </label>
@@ -247,7 +252,8 @@ function App() {
                                 onChange={handleChange}
                                 id="temp"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={4}
+                                checked={formData.employmentStatus === 4}
                             />
                             Temp
                         </label>
@@ -257,7 +263,8 @@ function App() {
                                 onChange={handleChange}
                                 id="intern"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={5}
+                                checked={formData.employmentStatus === 5}
                             />
                             Intern
                         </label>
@@ -267,7 +274,8 @@ function App() {
                                 onChange={handleChange}
                                 id="retired"
                                 name="employmentStatus"
-                                value={formData.employmentStatus}
+                                value={6}
+                                checked={formData.employmentStatus === 6}
                             />
                             Retired
                         </label>
@@ -281,14 +289,14 @@ function App() {
                         value={formData.favoriteColor}
                         onChange={handleChange}
                     >
-                        <option value="">-- Choose --</option>
-                        <option value="red">Red</option>
-                        <option value="orange">Orange</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="green">Green</option>
-                        <option value="blue">Blue</option>
-                        <option value="indigo">Indigo</option>
-                        <option value="violet">Violet</option>
+                        <option value={0}>-- Choose --</option>
+                        <option value={1}>Red</option>
+                        <option value={2}>Orange</option>
+                        <option value={3}>Yellow</option>
+                        <option value={4}>Green</option>
+                        <option value={5}>Blue</option>
+                        <option value={6}>Indigo</option>
+                        <option value={7}>Violet</option>
                     </select>
                     <br />
 

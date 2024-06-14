@@ -2,6 +2,7 @@
 {
     public enum FavoriteColor
     {
+        Unknown = 0,
         Red,
         Orange,
         Yellow,

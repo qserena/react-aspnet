@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\types\\favoritecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:types\\favoritecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\types\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:types\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\types\\favoritecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:types\\favoritecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|c:\\users\\tom\\source\\repos\\react-aspnet\\api\\types\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF9C8D2-DA9E-46D3-B003-2E9FE0B6212B}|api.csproj|solutionrelative:types\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -72,46 +72,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAqwJgAAAANAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwJQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T11:43:11.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "FavoriteColor.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Types\\FavoriteColor.cs",
               "RelativeDocumentMoniker": "Types\\FavoriteColor.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Types\\FavoriteColor.cs",
               "RelativeToolTip": "Types\\FavoriteColor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T10:41:29.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "EmploymentStatus.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Types\\EmploymentStatus.cs",
               "RelativeDocumentMoniker": "Types\\EmploymentStatus.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Types\\EmploymentStatus.cs",
               "RelativeToolTip": "Types\\EmploymentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T10:39:55.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "api",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\api.csproj",
               "RelativeDocumentMoniker": "api.csproj",
@@ -124,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
