@@ -14,7 +14,8 @@
     align-items: left;
 }
 
-.form {
+.form,
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -23,5 +24,9 @@
 
 input {
     height: 1.6em;
+}
+
+input,
+textarea {
     margin-bottom: 1em;
 }

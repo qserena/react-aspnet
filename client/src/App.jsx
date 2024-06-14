@@ -70,6 +70,7 @@ function App() {
         } catch (error) {
             handleAxiosError(error)
         }
+        getEmployees()
     }
 
     async function updateClick() {
@@ -95,6 +96,7 @@ function App() {
         } catch (error) {
             handleAxiosError(error)
         }
+        getEmployees()
     }
 
     async function deleteClick() {
@@ -106,6 +108,7 @@ function App() {
         } catch (error) {
             handleAxiosError(error)
         }
+        getEmployees()
     }
 
     function handleChange(e) {
@@ -163,22 +166,152 @@ function App() {
                         name="lastName"
                         value={formData.lastName}
                     />
-                    <label htmlFor="isFriendly">Are you friendly?</label>
+                    <label htmlFor="email">Email</label>
                     <input
-                        type="checkbox"
+                        type="email"
                         onChange={handleChange}
-                        id="isFriendly"
-                        name="isFriendly"
-                        checked={formData.isFriendly}
+                        id="email"
+                        name="email"
+                        value={formData.email}
                     />
+                    <label htmlFor="comments" className="htmlFor">
+                        Comments
+                    </label>
+                    <textarea
+                        onChange={handleChange}
+                        id="comments"
+                        name="comments"
+                        value={formData.comments}
+                    />
+                    <label>
+                        <input
+                            type="checkbox"
+                            onChange={handleChange}
+                            id="isFriendly"
+                            name="isFriendly"
+                            checked={formData.isFriendly}
+                        />
+                        Are you friendly?
+                    </label>
+                    <label htmlFor="birthYear">Birth Year</label>
+                    <input
+                        type="number"
+                        onChange={handleChange}
+                        id="birthYear"
+                        name="birthYear"
+                        value={formData.birthYear}
+                    />
+                    <label htmlFor="weight">Weight</label>
+                    <input
+                        type="number"
+                        onChange={handleChange}
+                        id="weight"
+                        name="weight"
+                        value={formData.weight}
+                    />
+                    <fieldset>
+                        <legend>Current employment status</legend>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="fullTime"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Full Time
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="partTime"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Part Time
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="contractor"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Contractor
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="temp"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Temp
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="intern"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Intern
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                onChange={handleChange}
+                                id="retired"
+                                name="employmentStatus"
+                                value={formData.employmentStatus}
+                            />
+                            Retired
+                        </label>
+                    </fieldset>
+                    <br />
+
+                    <label htmlFor="favoriteColor">Favorite Color</label>
+                    <select
+                        id="favoriteColor"
+                        name="favoriteColor"
+                        value={formData.favoriteColor}
+                        onChange={handleChange}
+                    >
+                        <option value="">-- Choose --</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="indigo">Indigo</option>
+                        <option value="violet">Violet</option>
+                    </select>
+                    <br />
+
                     <div className="buttons">
-                        <button id="addButton" onClick={() => addClick()}>
+                        <button
+                            id="addButton"
+                            disabled={formData.id !== ''}
+                            onClick={() => addClick()}
+                        >
                             Add
                         </button>
-                        <button id="updateButton" onClick={() => updateClick()}>
+                        <button
+                            id="updateButton"
+                            disabled={formData.id === ''}
+                            onClick={() => updateClick()}
+                        >
                             Update
                         </button>
-                        <button id="deleteButton" onClick={() => deleteClick()}>
+                        <button
+                            id="deleteButton"
+                            disabled={formData.id === ''}
+                            onClick={() => deleteClick()}
+                        >
                             Delete
                         </button>
                     </div>
