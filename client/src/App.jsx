@@ -30,8 +30,6 @@ function App() {
         try {
             const res = await axios.get(BASE_URL + 'GetEmployees')
 
-            console.log(res.data)
-
             setEmployees(
                 res.data.map((elem) => ({
                     key: elem.Id,
@@ -115,11 +113,13 @@ function App() {
 
     function handleChange(e) {
         const { type, name, value, checked } = e.target
-
+        console.log(e.target)
+        const convertedValue = type === 'radio' ? parseInt(value) : value
         setFormData((prevFormData) => ({
             ...prevFormData,
-            [name]: type === 'checkbox' ? checked : value,
+            [name]: type === 'checkbox' ? checked : convertedValue,
         }))
+        console.log(formData)
     }
 
     function handleAxiosError(error) {
@@ -301,11 +301,7 @@ function App() {
                     <br />
 
                     <div className="buttons">
-                        <button
-                            id="addButton"
-                            disabled={formData.id !== ''}
-                            onClick={() => addClick()}
-                        >
+                        <button id="addButton" onClick={() => addClick()}>
                             Add
                         </button>
                         <button
