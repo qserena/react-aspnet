@@ -15,5 +15,6 @@ This app is built with React Router 6 to handle client-side routing.
 - JavaScript
 - React
 - ASP.NET Core Web API
+- C#
 - SQL Server
 
