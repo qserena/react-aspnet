@@ -1,9 +1,12 @@
 import React from 'react'
 
 const EmployeeItem = ({ employee, setForm } = props) => {
+    const currentYear = new Date().getFullYear()
+    const birthString =
+        employee.birthYear > 0 ? `, ${currentYear - employee.birthYear}` : ''
     return (
         <li onClick={() => setForm(employee)}>
-            {`Id: ${employee.id} ${employee.firstName} ${employee.lastName}`}
+            {`${employee.firstName} ${employee.lastName}` + birthString}
         </li>
     )
 }
