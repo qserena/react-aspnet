@@ -185,13 +185,14 @@ function App() {
                         name="comments"
                         value={formData.comments}
                     />
-                    <label>
+                    <label className="checkbox-label">
                         <input
                             type="checkbox"
                             onChange={handleChange}
                             id="isFriendly"
                             name="isFriendly"
                             checked={formData.isFriendly}
+                            className="checkbox"
                         />
                         Are you friendly?
                     </label>
