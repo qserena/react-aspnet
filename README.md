@@ -1,4 +1,4 @@
-# React client with ASP.NET Core Web Api
+# React Client with ASP.NET Core Web Api
 
 ## Description
 Web application where you can filter out desired van type and see descriptions and prices.
@@ -13,13 +13,7 @@ This app is built with React Router 6 to handle client-side routing.
 - HTML
 - CSS
 - JavaScript
-- TypeScript
 - React
-- React Router 6
-- Firebase database
+- ASP.NET Core Web API
+- SQL Server
 
-## Live link
-VanLife is deployed here:
-[https://toms-vanlife.netlify.app](https://toms-vanlife.netlify.app/)
-
-Please feel free to click around and explore!
