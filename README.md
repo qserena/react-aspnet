@@ -24,4 +24,4 @@ When using "Update" and "Delete" you have to first select the item in the list a
 ## Demo
 
 ## Inspiration and Credits
-[Test](https://www.youtube.com/watch?v=O5hKoBV3vaU)
+- [Build app using React JS, .NET Core Web API and Microsoft SQL Server](https://www.youtube.com/watch?v=O5hKoBV3vaU)
