@@ -20,6 +20,5 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 
 The form shown above is used to execute the CRUD operations. There are several input fields in order to include many data types. 
 
-<br/>
 When using "Update" and "Delete" you have to first select the item in the list at the right.
 ## Demo
