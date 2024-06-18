@@ -16,6 +16,6 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 - SQL Server
 
 ## User Interface
-<img style="border: 1 solid #000000;" src="./Form.png" alt="Simple user interface." width="300px"/>
+<img style="border: solid #000000;" src="./Form.png" alt="Simple user interface." width="300px"/>
 
 ## Demo
