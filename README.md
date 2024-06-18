@@ -7,7 +7,7 @@ If you login you can see views designed for your own Vans.
 This app is built with React Router 6 to handle client-side routing.
 
 <br/>
-<img src="./Fulstack CRUD.png" alt="Overview design of this app." width="600px"/>
+<img src="./Fullstack CRUD.png" alt="Overview design of this app." width="600px"/>
 
 ## Technologies
 - HTML
