@@ -1,10 +1,7 @@
 # React Client with ASP.NET Core Web Api
 
 ## Description
-Web application where you can filter out desired van type and see descriptions and prices.
-If you login you can see views designed for your own Vans.
-
-This app is built with React Router 6 to handle client-side routing.
+This is a fullstack CRUD (Create, Read, Update, Delete) application with a React client, a ASP.NET Core Web API and a SQL Server database.
 
 <br/>
 <img src="./Fullstack CRUD.png" alt="Overview design of this app." width="600px"/>
