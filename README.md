@@ -23,7 +23,7 @@ The form shown above is used to execute the CRUD operations. There are several i
 When using "Update" and "Delete" you have to first select the item in the list at the right.
 ## Demo
 
-## Inspiration and Credits
+## Inspirations and Credits
 - [Build app using React JS, .NET Core Web API and Microsoft SQL Server](https://www.youtube.com/watch?v=O5hKoBV3vaU)
 - [Product Management Application using .NET Core 6 and React JS with CRUD Operations](https://medium.com/@jaydeepvpatil225/product-management-application-using-net-core-6-and-react-js-with-crud-operation-1f8bb9f709ba)
 - [CRUD Operations Using ASP.NET Core Web API And ReactJS](https://www.c-sharpcorner.com/article/crud-operations-using-asp-net-core-web-api-and-reactjs/)
