@@ -1,4 +1,4 @@
-# React Client with ASP.NET Core Web Api
+# React Client with ASP.NET Core Web API
 
 ## Description
 This is a fullstack CRUD (Create, Read, Update, Delete) application with a React client, an ASP.NET Core Web API and a SQL Server database.
