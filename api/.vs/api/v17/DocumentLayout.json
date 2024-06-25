@@ -54,8 +54,7 @@
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvzcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T11:43:11.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T11:43:11.432Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Types\\FavoriteColor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T10:41:29.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T10:41:29.04Z"
             },
             {
               "$type": "Document",
@@ -78,7 +76,7 @@
               "RelativeDocumentMoniker": "Types\\EmploymentStatus.cs",
               "ToolTip": "C:\\Users\\tom\\source\\repos\\react-aspnet\\api\\Types\\EmploymentStatus.cs",
               "RelativeToolTip": "Types\\EmploymentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T10:39:55.183Z",
               "EditorCaption": ""
@@ -93,8 +91,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-12T11:59:35.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T11:59:35.385Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:20:59.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T12:20:59.58Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "api.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-12T10:39:17.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T10:39:17.965Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Models\\Employee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T10:06:08.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T10:06:08.354Z"
             }
           ]
         }

@@ -51,6 +51,11 @@ function App() {
     }
 
     async function addClick() {
+        if (formData.firstName === '') {
+            alert('First Name is required')
+            return
+        }
+
         const data = {
             Id: '',
             FirstName: formData.firstName,
@@ -144,6 +149,7 @@ function App() {
             key={item.id}
             employee={item}
             setForm={() => setFormData(item)}
+            isSelected={item.id === formData.id}
         ></EmployeeItem>
     ))
 
@@ -152,7 +158,7 @@ function App() {
             <h1>Test Form</h1>
             <div className="main">
                 <div className="form">
-                    <label htmlFor="firstName">First Name</label>
+                    <label htmlFor="firstName">First Name *</label>
                     <input
                         type="text"
                         onChange={handleChange}
