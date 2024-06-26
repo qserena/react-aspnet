@@ -155,9 +155,10 @@ function App() {
 
     return (
         <div className="container">
-            <h1>Test Form</h1>
+            <h1>Admin Form</h1>
             <div className="main">
                 <div className="form">
+                    <h2>Employee</h2>
                     <label htmlFor="firstName">First Name *</label>
                     <input
                         type="text"
@@ -308,7 +309,11 @@ function App() {
                     <br />
 
                     <div className="buttons">
-                        <button id="addButton" onClick={() => addClick()}>
+                        <button
+                            id="addButton"
+                            disabled={formData.firstName === ''}
+                            onClick={() => addClick()}
+                        >
                             Add
                         </button>
                         <button
@@ -327,7 +332,10 @@ function App() {
                         </button>
                     </div>
                 </div>
-                <ul id="list">{employeeList}</ul>
+                <div className="right">
+                    <h2>Employees</h2>
+                    <ul className="list">{employeeList}</ul>
+                </div>
             </div>
         </div>
     )
