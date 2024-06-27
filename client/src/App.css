@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 700px;
+    width: 900px;
 }
 
 .main {
@@ -14,7 +14,14 @@
     align-items: left;
 }
 
-.form,
+.form {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}
+
+#form-left,
+#form-right,
 fieldset {
     display: flex;
     flex-direction: column;
@@ -22,8 +29,15 @@ fieldset {
     align-items: start;
 }
 
+#form-right {
+    margin-left: 6em;
+}
+
+.right {
+    margin-left: 10em;
+}
+
 fieldset {
-    margin-top: 1em;
     padding-top: 1em;
 }
 
@@ -61,7 +75,7 @@ select {
 }
 
 .buttons {
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .list {

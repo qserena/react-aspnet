@@ -155,156 +155,176 @@ function App() {
         <div className="container">
             <h1>Admin Form</h1>
             <div className="main">
-                <div className="form">
+                <div className="left">
                     <h2>Employee</h2>
-                    <label htmlFor="firstName">First Name *</label>
-                    <input
-                        type="text"
-                        onChange={handleChange}
-                        id="firstName"
-                        name="firstName"
-                        value={formData.firstName}
-                    />
-                    <label htmlFor="lastName">Last Name</label>
-                    <input
-                        type="text"
-                        onChange={handleChange}
-                        id="lastName"
-                        name="lastName"
-                        value={formData.lastName}
-                    />
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="email"
-                        onChange={handleChange}
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                    />
-                    <label htmlFor="comments" className="htmlFor">
-                        Comments
-                    </label>
-                    <textarea
-                        onChange={handleChange}
-                        id="comments"
-                        name="comments"
-                        value={formData.comments}
-                    />
-                    <label className="checkbox-label">
-                        <input
-                            type="checkbox"
-                            onChange={handleChange}
-                            id="isFriendly"
-                            name="isFriendly"
-                            checked={formData.isFriendly}
-                            className="checkbox"
-                        />
-                        Are you friendly?
-                    </label>
-                    <label htmlFor="birthYear">Birth Year</label>
-                    <input
-                        type="number"
-                        onChange={handleChange}
-                        id="birthYear"
-                        name="birthYear"
-                        value={formData.birthYear}
-                    />
-                    <label htmlFor="weight">Weight</label>
-                    <input
-                        type="number"
-                        onChange={handleChange}
-                        id="weight"
-                        name="weight"
-                        value={formData.weight}
-                    />
-                    <fieldset>
-                        <legend>Current employment status</legend>
-                        <label>
+                    <div className="form">
+                        <div id="form-left">
+                            <label htmlFor="firstName">First Name *</label>
                             <input
-                                type="radio"
+                                type="text"
                                 onChange={handleChange}
-                                id="fullTime"
-                                name="employmentStatus"
-                                value={1}
-                                checked={formData.employmentStatus === 1}
+                                id="firstName"
+                                name="firstName"
+                                value={formData.firstName}
                             />
-                            Full Time
-                        </label>
-                        <label>
+                            <label htmlFor="lastName">Last Name</label>
                             <input
-                                type="radio"
+                                type="text"
                                 onChange={handleChange}
-                                id="partTime"
-                                name="employmentStatus"
-                                value={2}
-                                checked={formData.employmentStatus === 2}
+                                id="lastName"
+                                name="lastName"
+                                value={formData.lastName}
                             />
-                            Part Time
-                        </label>
-                        <label>
+                            <label htmlFor="email">Email</label>
                             <input
-                                type="radio"
+                                type="email"
                                 onChange={handleChange}
-                                id="contractor"
-                                name="employmentStatus"
-                                value={3}
-                                checked={formData.employmentStatus === 3}
+                                id="email"
+                                name="email"
+                                value={formData.email}
                             />
-                            Contractor
-                        </label>
-                        <label>
+                            <label htmlFor="comments" className="htmlFor">
+                                Comments
+                            </label>
+                            <textarea
+                                onChange={handleChange}
+                                id="comments"
+                                name="comments"
+                                value={formData.comments}
+                            />
+                            <label className="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    onChange={handleChange}
+                                    id="isFriendly"
+                                    name="isFriendly"
+                                    checked={formData.isFriendly}
+                                    className="checkbox"
+                                />
+                                Are you friendly?
+                            </label>
+                            <label htmlFor="birthYear">Birth Year</label>
                             <input
-                                type="radio"
+                                type="number"
                                 onChange={handleChange}
-                                id="temp"
-                                name="employmentStatus"
-                                value={4}
-                                checked={formData.employmentStatus === 4}
+                                id="birthYear"
+                                name="birthYear"
+                                value={formData.birthYear}
                             />
-                            Temp
-                        </label>
-                        <label>
+                            <label htmlFor="weight">Weight</label>
                             <input
-                                type="radio"
+                                type="number"
                                 onChange={handleChange}
-                                id="intern"
-                                name="employmentStatus"
-                                value={5}
-                                checked={formData.employmentStatus === 5}
+                                id="weight"
+                                name="weight"
+                                value={formData.weight}
                             />
-                            Intern
-                        </label>
-                        <label>
-                            <input
-                                type="radio"
-                                onChange={handleChange}
-                                id="retired"
-                                name="employmentStatus"
-                                value={6}
-                                checked={formData.employmentStatus === 6}
-                            />
-                            Retired
-                        </label>
-                    </fieldset>
-                    <br />
+                        </div>
+                        <div id="form-right">
+                            <fieldset>
+                                <legend>Current employment status</legend>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="fullTime"
+                                        name="employmentStatus"
+                                        value={1}
+                                        checked={
+                                            formData.employmentStatus === 1
+                                        }
+                                    />
+                                    Full Time
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="partTime"
+                                        name="employmentStatus"
+                                        value={2}
+                                        checked={
+                                            formData.employmentStatus === 2
+                                        }
+                                    />
+                                    Part Time
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="contractor"
+                                        name="employmentStatus"
+                                        value={3}
+                                        checked={
+                                            formData.employmentStatus === 3
+                                        }
+                                    />
+                                    Contractor
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="temp"
+                                        name="employmentStatus"
+                                        value={4}
+                                        checked={
+                                            formData.employmentStatus === 4
+                                        }
+                                    />
+                                    Temp
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="intern"
+                                        name="employmentStatus"
+                                        value={5}
+                                        checked={
+                                            formData.employmentStatus === 5
+                                        }
+                                    />
+                                    Intern
+                                </label>
+                                <label>
+                                    <input
+                                        type="radio"
+                                        onChange={handleChange}
+                                        id="retired"
+                                        name="employmentStatus"
+                                        value={6}
+                                        checked={
+                                            formData.employmentStatus === 6
+                                        }
+                                    />
+                                    Retired
+                                </label>
+                            </fieldset>
+                            <br />
 
-                    <label htmlFor="favoriteColor">Favorite Color</label>
-                    <select
-                        id="favoriteColor"
-                        name="favoriteColor"
-                        value={formData.favoriteColor}
-                        onChange={handleChange}
-                    >
-                        <option value={0}>-- Choose --</option>
-                        <option value={1}>Red</option>
-                        <option value={2}>Orange</option>
-                        <option value={3}>Yellow</option>
-                        <option value={4}>Green</option>
-                        <option value={5}>Blue</option>
-                        <option value={6}>Indigo</option>
-                        <option value={7}>Violet</option>
-                    </select>
-                    <br />
+                            <label htmlFor="favoriteColor">
+                                Favorite Color
+                            </label>
+                            <select
+                                id="favoriteColor"
+                                name="favoriteColor"
+                                value={formData.favoriteColor}
+                                onChange={handleChange}
+                            >
+                                <option value={0}>-- Choose --</option>
+                                <option value={1}>Red</option>
+                                <option value={2}>Orange</option>
+                                <option value={3}>Yellow</option>
+                                <option value={4}>Green</option>
+                                <option value={5}>Blue</option>
+                                <option value={6}>Indigo</option>
+                                <option value={7}>Violet</option>
+                            </select>
+                            <br />
+                        </div>
+                    </div>
 
                     <div className="buttons">
                         <button
@@ -330,6 +350,7 @@ function App() {
                         </button>
                     </div>
                 </div>
+
                 <div className="right">
                     <h2>Employees</h2>
                     <ul className="list">{employeeList}</ul>
