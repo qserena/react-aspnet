@@ -45,4 +45,4 @@ The Employee data is stored in a SQL Server database table (see above).
 - [Build app using React JS, .NET Core Web API and Microsoft SQL Server](https://www.youtube.com/watch?v=O5hKoBV3vaU)
 - [Product Management Application using .NET Core 6 and React JS with CRUD Operations](https://medium.com/@jaydeepvpatil225/product-management-application-using-net-core-6-and-react-js-with-crud-operation-1f8bb9f709ba)
 - [CRUD Operations Using ASP.NET Core Web API And ReactJS](https://www.c-sharpcorner.com/article/crud-operations-using-asp-net-core-web-api-and-reactjs/)
-- [The Frontend Developer Career Path](https://v2.scrimba.com/the-frontend-developer-career-path-c0j)
+- [The Frontend Developer Career Path (Scrimba)](https://v2.scrimba.com/the-frontend-developer-career-path-c0j)
