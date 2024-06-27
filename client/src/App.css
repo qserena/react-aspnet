@@ -22,6 +22,11 @@ fieldset {
     align-items: start;
 }
 
+fieldset {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
 input {
     height: 1.6em;
 }
@@ -31,15 +36,28 @@ textarea {
     margin-bottom: 1em;
 }
 
+input[type='radio'] {
+    margin-right: 8px;
+}
+
+label input {
+    vertical-align: text-top;
+    padding-top: 4px;
+}
+
 .checkbox-label {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0 1em 0;
 }
 
 .checkbox {
-    margin-right: 10px;
-    margin-bottom: 3px;
+    margin-right: 8px;
+    margin-bottom: 1px;
+}
+
+select {
+    padding: 5px;
 }
 
 .buttons {

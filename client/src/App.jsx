@@ -118,13 +118,11 @@ function App() {
 
     function handleChange(e) {
         const { type, name, value, checked } = e.target
-        console.log(e.target)
         const convertedValue = type === 'radio' ? parseInt(value) : value
         setFormData((prevFormData) => ({
             ...prevFormData,
             [name]: type === 'checkbox' ? checked : convertedValue,
         }))
-        console.log(formData)
     }
 
     function handleAxiosError(error) {
