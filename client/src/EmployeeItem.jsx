@@ -9,9 +9,9 @@ const EmployeeItem = ({ employee, setForm, isSelected } = props) => {
     const listItem = document.getElementById(thisId)
 
     if (isSelected) {
-        listItem.classList.add('selected')
+        listItem?.classList?.add('selected')
     } else {
-        listItem.classList.remove('selected')
+        listItem?.classList?.remove('selected')
     }
 
     return (
