@@ -16,7 +16,7 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 - SQL Server
 
 ## User Interface / Client
-<kbd><img src="./Form.png" alt="Simple user interface." width="600px"/></kbd>
+<kbd><img src="./Form.png" alt="Simple user interface." width="700px"/></kbd>
 
 The form shown above is used to execute the CRUD operations. I included quite a lot of input fields in order to handle many data types. 
 
@@ -27,7 +27,7 @@ The React app includes the following techniques:
 When using "Update" and "Delete" you have to first select the item in the list at the right.
 
 ## Database
-<img src="./database.png" alt="SQL Server database." width="600px"/>
+<img src="./database.png" alt="SQL Server database." width="800px"/>
 
 The Employee data is stored in a SQL Server database table (see above).
 
