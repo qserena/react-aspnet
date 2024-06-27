@@ -16,7 +16,7 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 - SQL Server
 
 ## User Interface / Client
-<kbd><img src="./Form.png" alt="Simple user interface." width="300px"/></kbd>
+<kbd><img src="./Form.png" alt="Simple user interface." width="600px"/></kbd>
 
 The form shown above is used to execute the CRUD operations. I included quite a lot of input fields in order to handle many data types. 
 
