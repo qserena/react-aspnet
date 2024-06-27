@@ -6,6 +6,8 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 <br/>
 <img src="./Fullstack CRUD.png" alt="Overview design of this app." width="600px"/>
 
+<br/>
+
 ## Technologies
 - HTML
 - CSS
