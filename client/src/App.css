@@ -18,6 +18,10 @@
     display: flex;
     justify-content: left;
     align-items: start;
+    padding: 1em;
+    background-color: aliceblue;
+    border: solid 1px #ccc;
+    border-radius: 4px;
 }
 
 #form-left,
@@ -39,6 +43,7 @@ fieldset {
 
 fieldset {
     padding-top: 1em;
+    border-width: 1px;
 }
 
 input {
