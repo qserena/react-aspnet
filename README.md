@@ -16,16 +16,15 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 - SQL Server
 
 ## User Interface / Client
-<kbd><img src="./Form.png" alt="Simple user interface." width="300px"/></kbd>
+<kbd><img src="./Form.png" alt="Simple user interface." width="600px"/></kbd>
 
 The form shown above is used to execute the CRUD operations. I included quite a lot of input fields in order to handle many data types. 
 
 The React app includes the following techniques:
-- [Controlled inputs](https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable) for good practice on how to handle the form data.
+- [Controlled inputs](https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable) for good practice on how to handle form data.
 - [Axios package](https://axios-http.com/) to make http requests to the Web API.
 
 When using "Update" and "Delete" you have to first select the item in the list at the right.
-## Demo
 
 ## Inspirations and Credits
 - [Build app using React JS, .NET Core Web API and Microsoft SQL Server](https://www.youtube.com/watch?v=O5hKoBV3vaU)
