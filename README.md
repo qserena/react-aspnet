@@ -25,7 +25,6 @@ The React app includes the following techniques:
 - [Axios package](https://axios-http.com/) to make http requests to the Web API.
 
 When using "Update" and "Delete" you have to first select the item in the list at the right.
-## Demo
 
 ## Inspirations and Credits
 - [Build app using React JS, .NET Core Web API and Microsoft SQL Server](https://www.youtube.com/watch?v=O5hKoBV3vaU)
