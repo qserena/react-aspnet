@@ -9,6 +9,9 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 <img src="./Fullstack CRUD.png" alt="Overview design of this app." width="600px"/>
 
 <br/>
+NOTE! The same project, but with the addition of Entity Framework is found <a href="https://github.com/qserena/react-aspnet-entityframework/">Here!</a> 
+<br/>
+<br/>
 
 ## Technologies
 - HTML
