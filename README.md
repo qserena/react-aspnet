@@ -7,7 +7,7 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 
 <br/>
 <img src="./Fullstack CRUD.png" alt="Overview design of this app." width="600px"/>
-*Schematic sketch of the system. The React client calls the .NET API, which calls the database.* 
+*Overview of the system. The React client calls the .NET API, which calls the database.* 
 
 <br/>
 <br/>
