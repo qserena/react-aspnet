@@ -11,6 +11,7 @@ This is a fullstack CRUD (Create, Read, Update, Delete) application with a React
 
 <br/>
 <br/>
+<br/>
 NOTE! The same project, but with the addition of Entity Framework is found <a href="https://github.com/qserena/react-aspnet-entityframework/">Here!</a> 
 <br/>
 <br/>
